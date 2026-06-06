@@ -15,7 +15,7 @@ def load_known_faces(folder):
     return encodings, names
 
 def detect_and_recognize(frame, known_encodings, known_names):
-    # ✅ Resize using OpenCV, not face_recognition
+    # Resize using OpenCV, not face_recognition
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
     rgb_small_frame = cv2.cvtColor(small_frame, cv2.COLOR_BGR2RGB)
 
