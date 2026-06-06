@@ -5,7 +5,7 @@ def draw_greeting(frame, top, right, bottom, left, name):
     cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
     hour = datetime.now().hour
 
-    # ✅ Correct conditional expression
+    #  Correct conditional expression
     if hour < 12:
         greeting = "Good Morning"
     elif hour < 18:
