@@ -26,7 +26,7 @@ def get_weather(city="Kathmandu", api_key=API_KEY, refresh_interval=600):
         if data.get("main"):
             temp = data["main"]["temp"]
             condition = data["weather"][0]["description"].capitalize()
-            # ✅ Use chr(176) for degree symbol to avoid "??"
+            #  Use chr(176) for degree symbol to avoid "??"
             _last_weather = f"{city}: {temp}{chr(176)}C, {condition}"
         else:
             _last_weather = "Weather data unavailable"
