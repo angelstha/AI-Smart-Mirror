@@ -17,7 +17,7 @@ time_label.pack(side="left", padx=20)
 greeting_label = tk.Label(top_frame, text="Hello, Angel!", fg="white", bg="black", font=("Helvetica", 18))
 greeting_label.pack(side="left", padx=20)
 
-weather_label = tk.Label(top_frame, text="☀️ 22°C", fg="white", bg="black", font=("Helvetica", 18))
+weather_label = tk.Label(top_frame, text=" 22°C", fg="white", bg="black", font=("Helvetica", 18))
 weather_label.pack(side="right", padx=20)
 
 # --- Main Section ---
